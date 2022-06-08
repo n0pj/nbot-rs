@@ -1,0 +1,3 @@
+[submodule "libs/nbot-twitter-rs"]
+	path = libs/nbot-twitter-rs
+	url = git@github.com:n0pj/nbot-twitter-rs.git
