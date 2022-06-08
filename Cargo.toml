@@ -7,4 +7,8 @@ version = "0.1.0"
 
 [dependencies]
 clap = "3.1"
+dotenv = "0.15"
 nbot-twitter-rs = {path = "libs/nbot-twitter-rs"}
+reqwest = {version = "0.11", features = ["json"]}
+serde = {version = "1", features = ["derive"]}
+tokio = {version = "1", features = ["full"]}
