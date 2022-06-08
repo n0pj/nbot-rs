@@ -35,7 +35,7 @@ async fn main() {
         let url = nbot_twitter_rs::endpoints::follows::users_a_user_id_is_following::url(&user_id);
         let mut user_follows = request::request::<
             Data<Vec<nbot_twitter_rs::endpoints::follows::users_a_user_id_is_following::User>>,
-        >(&url, Some(&[("max_results", "1")]))
+        >(&url, Some(&[("max_results", "200")]))
         .await;
 
         // if user_follows.meta.next_token is not None, loop until user_follows.meta.next_token is None
